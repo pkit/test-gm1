@@ -11,6 +11,14 @@ class CounterScene extends Phaser.Scene {
     create() {
         const { width, height } = this.cameras.main;
 
+        // Create striped background
+        const graphics = this.add.graphics();
+        const stripeWidth = 40;
+        for (let x = 0; x < width; x += stripeWidth * 2) {
+            graphics.fillStyle(0x1a1a1a, 1);
+            graphics.fillRect(x, 0, stripeWidth, height);
+        }
+
         // Add title
         this.add.text(width / 2, 100, 'Simple Counter', {
             fontSize: '48px',
