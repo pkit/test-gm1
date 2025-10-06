@@ -22,7 +22,7 @@ class CounterScene extends Phaser.Scene {
         this.counterText = this.add.text(width / 2, height / 2 - 50, '0', {
             fontSize: '96px',
             fontFamily: 'Arial',
-            color: '#3498db',
+            color: '#ff0000',
             fontStyle: 'bold'
         }).setOrigin(0.5);
 
@@ -101,7 +101,7 @@ const config = {
     type: Phaser.AUTO,
     width: 800,
     height: 600,
-    backgroundColor: '#34495e',
+    backgroundColor: '#000000',
     scene: CounterScene,
     parent: document.body
 };
