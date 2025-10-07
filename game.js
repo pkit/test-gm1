@@ -24,7 +24,7 @@ class CounterScene extends Phaser.Scene {
         this.counterText = this.add.text(width / 2, height / 2 - 50, '0', {
             fontSize: '96px',
             fontFamily: 'Arial',
-            color: '#00ff00',
+            color: '#ff0000',
             fontStyle: 'bold'
         }).setOrigin(0.5);
 
